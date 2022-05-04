@@ -2,18 +2,42 @@
   "name": "money-transaction-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Yash Gandhi",
+  "bugs": {
+    "url": "https://github.com/yashgandhi303/money-transaction-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashgandhi303/money-transaction-app.git"
+  },
+  "engines": {
+    "node": "14 || 15 || 16",
+    "npm": ">=6"
+  },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.6.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@emotion/cache": "11.7.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "@mui/icons-material": "5.4.1",
+    "@mui/material": "5.4.1",
+    "@mui/styled-engine": "5.4.1",
+    "@testing-library/jest-dom": "5.16.2",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "chart.js": "3.4.1",
+    "chroma-js": "2.4.2",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "react-chartjs-2": "3.0.4",
+    "react-dom": "17.0.2",
+    "react-github-btn": "1.2.1",
+    "react-router-dom": "6.2.1",
+    "react-scripts": "5.0.0",
+    "react-table": "7.7.0",
+    "stylis": "4.0.13",
+    "stylis-plugin-rtl": "2.1.1",
+    "web-vitals": "2.1.4",
+    "yup": "0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,13 +46,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "lint:fix": "eslint --fix .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn && yarn start"
   },
   "browserslist": {
     "production": [
@@ -43,28 +62,14 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.14.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.1"
-  },
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.+(json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "eslint": "8.8.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "prettier": "2.5.1"
   }
 }
